@@ -30,6 +30,8 @@ app.use("/api/empresa", routerEmpresa);
 app.use("/api/vacantes", routerVacante);
 app.use("/api/auth", routerAuth);
 
-app.listen(process.env.BACKEND_PORT, () => {
+const PORT = process.env.PORT || process.env.BACKEND_PORT;
+
+app.listen(PORT, () => {
   console.log("Servidor escuchando en el puerto: " + process.env.BACKEND_PORT);
 });
