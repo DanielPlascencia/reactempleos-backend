@@ -33,5 +33,5 @@ app.use("/api/auth", routerAuth);
 const PORT = process.env.PORT || process.env.BACKEND_PORT;
 
 app.listen(PORT, () => {
-  console.log("Servidor escuchando en el puerto: " + process.env.BACKEND_PORT);
+  console.log("Servidor escuchando en el puerto: " + PORT);
 });
